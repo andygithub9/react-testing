@@ -52,7 +52,7 @@ describe('Skills', () => {
     // Skills 組件在 1001ms 之後會顯示 Start learning button
     // 所以我們用 async/await 加上 findby query 在兩秒之後抓 Start learning button
 
-    // render(<Skills skills={skills} />)
+    render(<Skills skills={skills} />)
     const startLearningButton = await screen.findByRole(
       'button',
       {
