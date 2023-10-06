@@ -69,3 +69,4 @@ package.json
    3. 把 .husky/pre-commit 裡的 `yarn lint && yarn format` 替換成 `npx lint-staged`
 7. 通過 husky 在 git push 之前 run test
    1. 在 terminal run command `npx husky add .husky/pre-push "npm test -- --watchAll=false"`
+   2. 執行完上面的指令後會新增一個文件 .husky/pre-push ，之後我們在 git push 前都會執行一次 `npm test -- --watchAll=false` 確保我們的代碼有通過我們寫的測試
